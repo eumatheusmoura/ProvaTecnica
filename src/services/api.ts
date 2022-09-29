@@ -39,6 +39,7 @@ export async function dataDelete(id: any) {
     await api.delete(
       `https://cnctesteapl.azurewebsites.net/odata/Cliente(${id})`
     );
+
     console.log("Deletado com sucesso!");
   } catch (e) {
     console.log(e);

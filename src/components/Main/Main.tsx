@@ -74,7 +74,14 @@ const Main = () => {
                                 href="#"
                               >
                                 <TbTrash
-                                  onClick={() => dataDelete(item.Id)}
+                                  onClick={() => {
+                                    dataDelete(item.Id);
+                                    setDados(
+                                      dados.filter(
+                                        (dado) => dado.Id !== item.Id
+                                      )
+                                    );
+                                  }}
                                   size={25}
                                   color="black"
                                 />
