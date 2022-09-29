@@ -78,7 +78,7 @@ const Main = () => {
                                     dataDelete(item.Id);
                                     setDados(
                                       dados.filter(
-                                        (dado) => dado.Id !== item.Id
+                                        (dado: any) => dado.Id !== item.Id
                                       )
                                     );
                                   }}
