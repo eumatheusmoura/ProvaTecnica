@@ -1,9 +1,13 @@
 :root {
   --white: #ffffff;
-  font-family: Albert Sans, Avenir, Helvetica, Arial, sans-serif;
+  --green-color1: #223134;
+  --green-color2: #304242;
+  --font-text: Albert Sans;
+  --font-title: Manrope;
+  font-family: var(--font-text), Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   color: var(--white);
-  background-color: #304242;
+  background-color: var(--green-color1);
 }
 
 * {
@@ -15,7 +19,23 @@
   text-decoration: none;
 }
 
-body {
-  min-width: 320px;
-  min-height: 100vh;
+h1 {
+  font-family: var(--font-title);
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--white);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
