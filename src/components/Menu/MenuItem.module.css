@@ -1,0 +1,41 @@
+.MenuItem {
+  font-size: 16px;
+}
+
+.ItemList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ItemList:hover {
+  background-color: #3d4e52;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.ItemList1 {
+  background-color: var(--white);
+  color: var(--green-color1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ItemList1:hover {
+  background-color: #dbdada;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
